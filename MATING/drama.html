@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Películas | Drama</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="series.scss">
+    <link rel="stylesheet" href="drama.css">
+    <link rel="shortcut icon" href="icono glual.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <img src="icono glual.png" width="50" height="50">
+        <h1>
+            <a class="navbar-brand" href="#">Glual</a>
+        </h1>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="pagprin.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="series.html">Series</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="peliculas.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Películas</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="peliculaAC.html">Acción</a>
+                        <a class="dropdown-item" href="peliculaCF.html">Ciencia Ficción</a>
+                        <a class="dropdown-item" href="animadas.html">Animadas</a>
+                        <a class="dropdown-item" href="comedia.html">Comedia</a>
+                        <a class="dropdown-item" href="drama.html">Drama</a>
+                        <a class="dropdown-item" href="terror.html">Terror</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo1">Solicitar Películas</button>
+                    <div class="modal fade" id="dialogo1">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <!-- cabecera del diálogo -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Solicita tu película favorita</h4>
+                                    <button type="button" class="close" data-dismiss="modal">X</button>
+                                </div>
+
+                                <!-- cuerpo del diálogo -->
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="mail" class="col-lg-3 col-form-label">Tu email:</label>
+                                                <div class="col-lg-9">
+                                                    <input type="text" class="form-control" id="mail">
+                                                    <small id="helpId" class="form-text text-muted">Ingresa tu correo electronico (No sera compartido)</small>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="Pelicula" class="col-lg-3 col-form-label">Título de la película:</label>
+                                                <div class="col-lg-9">
+                                                    <input type="text" class="form-control" id="pelicula">
+                                                    <small id="helpId" class="form-text text-muted">Ejemplo: Misión imposible</small>
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="info">Más información:</label>
+                                                <textarea class="form-control" rows="5" id="info" name="info"></textarea>
+                                                <small id="helpId" class="form-text text-muted">Año/Actores/Director</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mensaje">Mensaje:</label>
+                                                <textarea class="form-control" rows="5" id="mensaje" name="mensaje"></textarea>
+                                                <small id="helpId" class="form-text text-muted">Ejemplo: Me gusta mucho esta película </small>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="offset-lg-3 col-lg-9">
+                                                    <button type="submit" class="btn btn-primary">Enviar reporte</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- pie del diálogo -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagprin.html#seccion1">Registrate</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Ingresa una Busqueda...">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+
+    <div class="container">
+        <h1>
+            <strong>Drama</strong>
+        </h1>
+        <div class="card-group mt-3">
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">El Asesino de Los Caprichos</h4>
+                    <p class="card-text"><em>2019</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/59c2ce5f13bffc750bfe6715877a9bda.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Pasión Obsesiva</h4>
+                    <p class="card-text"><em>2018</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/ed13cd23fb69837aa378d4a9fa24986c.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Nevrland</h4>
+                    <p class="card-text"><em>2020</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/a18d6e7df86fb8a2cca2a1a75ca73d45.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-group mt-3">
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Iniciales S.G.</h4>
+                    <p class="card-text"><em>2019</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/11fce589031587c9923bc7aee3395ee9.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">El Último Boy Scout</h4>
+                    <p class="card-text"><em>2019</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/209922f072186ef16d61111de246faf0.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">La Mente de Robin Williams</h4>
+                    <p class="card-text"><em>2019</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/35acd02f6f452047264da358cc3618f3.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-group mt-3">
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Come to Daddy</h4>
+                    <p class="card-text"><em>2019</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/9f7efc4f2018bdc512c66d3ff3f3f232.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Standing Up For Sunny </h4>
+                    <p class="card-text"><em>2019</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/0d3113e8f9c830fef029a8e5f7b51860.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Last Christmas</h4>
+                    <p class="card-text"><em>2013</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/e5588f36707f644690e3c851f5b13d20.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-group mt-3">
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Nefta Football Club</h4>
+                    <p class="card-text"><em>2020</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/49988f3d22fe0bbe32735cd353ed75c6.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Damas en Guerra</h4>
+                    <p class="card-text"><em>2011</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/074caa293d8a85a47ea8d84bacb295ea.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">El Alma de La Fiesta</h4>
+                    <p class="card-text"><em>2018</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/95ba5e9e012aad510f49e72a5030b50b.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-group mt-3">
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Farming</h4>
+                    <p class="card-text"><em>2015</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/9980fd8dfcf71a324a2dfe5cde988c24.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">High strung</h4>
+                    <p class="card-text"><em>2019</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/50e1a8e8949ca3c9016e8bad07767b79.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-center border-info">
+                <div class="card-body">
+                    <h4 class="card-title">Tall Tales</h4>
+                    <p class="card-text"><em>2019</em></p>
+                    <img class="card-img-top" src="https://static.noimg.net/movie/cover/original/dccfb263885c545abe03e9197e1813ab.jpg">
+                    <a href="#" class="btn btn-primary">Ver película</a>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="pagination  pagination-sm justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <nav>
+                <div class="container-fluid" style="background-color: #343A40;">
+                    <div class="container">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo2">
+                            Preguntas Frecuentes</button>
+
+                        <div class="modal fade" id="dialogo2">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <!-- cabecera del diálogo -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preguntas Frecuentes</h4>
+                                        <button type="button" class="close" data-dismiss="modal">X</button>
+                                    </div>
+
+                                    <!-- cuerpo del diálogo -->
+                                    <div class="modal-body">
+                                        <p><em>01. ¿Qué es Glual?</em></p>
+                                        <p>Glual es un sitio web donde puedes ver películas y series online desde la comodidad de tu casa.</p>
+                                        <p><em>02. ¿Subirán el capítulo de tal serie en vivo?</em></p>
+                                        <p>Para estar al tanto de eventos y transmisiones en vivo, te invitamos a que te suscribas a las notificaciones o puedes seguirnos a través de facebook como Glualrd.</p>
+                                        <p><em>03. ¿A qué hora transmitirán en vivo tal serie?</em></p>
+                                        <p>Cuando transmitimos una serie o episodio en vivo siempre publicamos la hora y fecha en nuestra página de facebook. Para estar al tanto siguenos en facebook como Glualrd.</p>
+                                        <p><em>04. No encuentro mi película favorita, ¿que hago?</em></p>
+                                        <p>Constantemente estamos actualizando nuestra lista de películas y series, te invitamos a que te registres en el sistema, en tu perfil de usuario podrás hacer pedidos ya sea de películas o series.</p>
+                                        <p><em>05. ¿Cuentan con una aplicación móvil?</em></p>
+                                        <p>Claro! Nuestra aplicación está a muy poco de ser estrenada. Te invitamos a que te suscribas a nuestra página y puedas ser uno de los primeros en tener nuestra app.</p>
+                                        <p><em>06.Quiero ver una película y no sé como.</em></p>
+                                        <p>Te dejamos los siguientes pasos para que puedas ver y disfrutar de tu película favorita.</p>
+                                        <ul>
+                                            <li> Encuentra la película que quieras ver. Esto lo puedes conseguir en la categoria de géneros o puedes usar el buscador en la parte superior.</li>
+                                            <li>Si aún asi no encuentras lo que buscabas te pedimos que te registres en el sistema y hagas un pedido desde tu perfil.</li>
+                                            <li>Si encontraste tu película favorita ve a la sección de reproducción.</li>
+                                            <li>Selecciona el idioma disponible, las opciones que tenemos generalmente son Latino, Subtitulada, Español España.</li>
+                                            <li>Dale click en Play y empieza a disfrutar de tu película. </li>
+                                        </ul>
+                                        <p><em>07. ¿Cómo consigo mi código de cupón?</em></p>
+                                        <p>Para conseguir tu código de cupón debes contactarte con nosotros a través del facebook oficial de Glualrd Obviamente ser VIP en el sitio tiene un precio simbólico que ayudará a seguir manteniendo el sitio web.</p>
+
+                                    </div>
+
+                                    <!-- pie del diálogo -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </nav>
+        </footer>
+        </div>
+        <div class="container">
+            <table class="table table-dark table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <h2>Años de Lanzamientos</h2>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020</td>
+                        <td>2015</td>
+                        <td>2010</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>2014</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>2013</td>
+                        <td>2008</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>2012</td>
+                        <td>2007</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>2011</td>
+                        <td>2006</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="mensaje"]').tooltip();
+            });
+        </script>
+</body>
+
+</html>

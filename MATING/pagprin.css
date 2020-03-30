@@ -1,0 +1,40 @@
+.card-title {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("black1.jpg");
+}
+
+strong {
+    color: white;
+    font-weight: bold;
+}
+
+.card-img-bottom {
+    width: 400px;
+    height: 575px;
+}
+
+em {
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
